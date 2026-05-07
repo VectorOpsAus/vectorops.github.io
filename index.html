@@ -86,34 +86,40 @@ flex-wrap:wrap;
 }
 
 .btn{
-padding:18px 34px;
-border-radius:12px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:18px 36px;
+border-radius:14px;
+font-size:17px;
 font-weight:600;
-font-size:16px;
 text-decoration:none;
-transition:0.3s ease;
-display:inline-block;
+transition:all 0.3s ease;
+cursor:pointer;
+border:none;
+letter-spacing:-0.3px;
 }
 
 .btn-primary{
-background:#1677FF;
+background:linear-gradient(135deg,#0F3B75,#2563EB);
 color:white;
-box-shadow:0 0 30px rgba(22,119,255,0.35);
+box-shadow:0 10px 30px rgba(37,99,235,0.35);
 }
 
 .btn-primary:hover{
 transform:translateY(-3px);
-background:#2B85FF;
+box-shadow:0 14px 40px rgba(37,99,235,0.45);
 }
 
 .btn-secondary{
-border:1px solid #2A2E36;
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.1);
 color:white;
-background:#11151C;
+backdrop-filter:blur(10px);
 }
 
 .btn-secondary:hover{
-background:#1A202B;
+background:rgba(255,255,255,0.08);
 transform:translateY(-3px);
 }
 
