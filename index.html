@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>VectorOps</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#0B0B0D;
+color:white;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:120px 0;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:
+radial-gradient(circle at top,#0f3b75 0%,transparent 30%),
+#0B0B0D;
+}
+
+.logo{
+width:140px;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-size:72px;
+font-weight:800;
+line-height:1.05;
+margin-bottom:24px;
+}
+
+.hero p{
+font-size:22px;
+color:#A1A1AA;
+max-width:760px;
+margin:auto;
+line-height:1.7;
+}
+
+.buttons{
+margin-top:45px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:18px 34px;
+border-radius:14px;
+text-decoration:none;
+font-weight:700;
+transition:0.3s;
+display:inline-block;
+}
+
+.btn-primary{
+background:#0086F5;
+color:white;
+box-shadow:0 0 30px rgba(0,134,245,0.3);
+}
+
+.btn-primary:hover{
+transform:translateY(-2px);
+background:#1E90FF;
+}
+
+.btn-secondary{
+border:1px solid #2A2A30;
+color:white;
+}
+
+.btn-secondary:hover{
+border-color:#0086F5;
+}
+
+.section-title{
+font-size:48px;
+text-align:center;
+margin-bottom:24px;
+font-weight:800;
+}
+
+.section-sub{
+text-align:center;
+color:#A1A1AA;
+max-width:760px;
+margin:0 auto 60px;
+line-height:1.7;
+font-size:18px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:28px;
+}
+
+.card{
+background:#111114;
+border:1px solid #1E1E24;
+padding:35px;
+border-radius:24px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#0086F5;
+}
+
+.card h3{
+font-size:24px;
+margin-bottom:16px;
+}
+
+.card p{
+color:#A1A1AA;
+line-height:1.7;
+}
+
+.demo-box{
+background:#111114;
+border:1px solid #1E1E24;
+border-radius:28px;
+padding:50px;
+text-align:center;
+}
+
+.demo-box img{
+width:100%;
+border-radius:18px;
+margin-top:30px;
+}
+
+.about{
+text-align:center;
+}
+
+.about p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+color:#A1A1AA;
+}
+
+.cta{
+text-align:center;
+background:
+radial-gradient(circle at center,#0f3b75 0%,transparent 50%);
+}
+
+.footer{
+padding:60px 20px;
+text-align:center;
+border-top:1px solid #1E1E24;
+color:#777;
+}
+
+.footer a{
+color:#A1A1AA;
+text-decoration:none;
+margin:0 12px;
+}
+
+.footer a:hover{
+color:white;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:48px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.section-title{
+font-size:36px;
+}
+
+section{
+padding:90px 0;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="container">
+
+<img src="https://i.imgur.com/3bL6qWi.png" class="logo">
+
+<h1>Never Miss<br>Another Lead</h1>
+
+<p>
+VectorOps helps service businesses capture, track, and respond to enquiries automatically — so no jobs slip through the cracks.
+</p>
+
+<div class="buttons">
+<a href="#contact" class="btn btn-primary">Book a Demo</a>
+<a href="#features" class="btn btn-secondary">See How It Works</a>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<h2 class="section-title">Missed Leads = Lost Revenue</h2>
+
+<p class="section-sub">
+The first business to reply usually wins the job.
+</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>📞 Missed Calls</h3>
+<p>Busy on jobs while leads go unanswered.</p>
+</div>
+
+<div class="card">
+<h3>📋 No Tracking</h3>
+<p>Enquiries get lost across calls, texts and emails.</p>
+</div>
+
+<div class="card">
+<h3>⏱ Slow Responses</h3>
+<p>Customers move on quickly when businesses don't reply fast.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<div class="container">
+
+<h2 class="section-title">What’s Included</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Instant SMS Replies</h3>
+</div>
+
+<div class="card">
+<h3>Lead Tracking Dashboard</h3>
+</div>
+
+<div class="card">
+<h3>Missed Call Capture</h3>
+</div>
+
+<div class="card">
+<h3>Customer Notifications</h3>
+</div>
+
+<div class="card">
+<h3>Email Alerts</h3>
+</div>
+
+<div class="card">
+<h3>Automation Setup</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="demo-box">
+
+<h2 class="section-title">See VectorOps In Action</h2>
+
+<p class="section-sub">
+Example automation workflow for service businesses.
+</p>
+
+<img src="https://i.imgur.com/Z9a6m6A.png">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div class="container">
+
+<h2 class="section-title">About VectorOps</h2>
+
+<p>
+VectorOps helps service businesses streamline lead handling, improve response times, and reduce missed opportunities using simple automation systems designed for real-world operations.
+</p>
+
+</div>
+
+</section>
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Ready To Stop Missing Leads?</h2>
+
+<p class="section-sub">
+Book a quick demo and see how VectorOps can automate your lead handling and customer follow-up.
+</p>
+
+<div class="buttons">
+<a href="mailto:hello@vectorops.au" class="btn btn-primary">Contact VectorOps</a>
+</div>
+
+</div>
+
+</section>
+
+<div class="footer">
+
+<p>
+VectorOps © 2026
+</p>
+
+<br>
+
+<a href="#">Privacy Policy</a>
+<a href="#">Terms & Conditions</a>
+<a href="#">Contact</a>
+
+</div>
+
+</body>
+</html>
